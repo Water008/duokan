@@ -25,7 +25,7 @@ jobs:
         run: pip install -r ./requirements.txt 
         
       - name: '运行【多看阅读】' 
-        run: python3 qqread.py 
+        run: python3 main.py 
         env:
             TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
             TG_USER_ID: ${{ secrets.TG_USER_ID }}
